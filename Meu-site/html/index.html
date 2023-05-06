@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Site de Victor :) </title>
     <style>
-
         body {
-            
+
             font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
-            background-color: #A2B38B
-            
+            background-color: #8ca863;
+            margin: 1em 0em;
+
 
         }
 
@@ -22,33 +25,40 @@
             background-color: #E4E9BE;
             text-align: center;
             border-width: 20px;
-            border-style: outset; 
-            border-color: #e2be8b; 
+            border-style: outset;
+            border-color: #b68b50;
+            margin: 0 0.2em;
 
         }
 
-        h2{
+        h2 {
             color: peru;
             background-color: #E4E9BE;
             text-align: center;
             border-width: 20px;
-            border-style: outset; 
-            border-color: #e2be8b; 
+            border-style: outset;
+            border-color: #b68b50;
+            margin: 1.5em 0.2em 0.2em 0.2em;
 
         }
 
-        p{
+        p {
             text-align: justify;
+            margin: 0 1.5em;
+
+
         }
 
-        .bordaalt{
+
+
+        .bordaalt {
             color: peru;
             background-color: #E4E9BE;
             text-align: center;
             border-width: 20px;
-            border-style: inset; 
-            border-color: #e2be8b; 
-            
+            border-style: inset;
+            border-color: #b68b50;
+
         }
 
         .pfp {
@@ -56,67 +66,208 @@
             height: 15%;
             margin: 0;
             padding: 0;
-            border-radius: 20%;
+            border-radius: 1em;
             text-align: center;
-        }   
+            transition: transform 1s linear;
+
+        }
+
+        .pfp:hover {
+            transform: rotateY(360deg) scale(2.0) translateX(140%);
+            box-shadow: -2px 24px 65px 0px rgba(0, 0, 0, 0.795);
+
+        }
 
 
+
+
+
+        .redes a img {
+
+            height: 100%;
+            margin: 0 0.2em;
+            transition: transform 0.2s;
+
+        }
+
+        .redes a img:hover {
+
+            transform: scale(1.2);
+
+        }
+
+        .redes {
+
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: .6em;
+        }
+
+        .sobremim {
+
+            display: flex;
+            margin: 0 1.5em;
+
+        }
+
+        .album {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+
+        .album div img {
+
+            height: 600px;
+            width: 337.5px;
+
+
+        }
+
+        .foto1:hover {
+            transform: rotateY(360deg) scale(1.5) translate(135%, -16.6%);
+        }
+
+        .foto2:hover {
+            transform: rotateY(360deg) scale(1.5) translate(40.75%, -16.6%);
+        }
+
+        .foto3:hover {
+            transform: rotateY(360deg) scale(1.5) translate(-42.75%, -16.6%);
+        }
+
+        .foto4:hover {
+            transform: rotateY(360deg) scale(1.5) translate(-130%, -16.6%);
+        }
     </style>
 </head>
+
 <body>
 
     <!--background-color: #A2B38B-->
-    
-    
-    <audio controls autoplay>
-        <source src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\musica.mp3" type="audio/mpeg">
-        O navegador usado não suporta reproduzir a música
-      </audio>
+
+    <div class="redes">
+        <audio controls autoplay loop src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\musica.mp3">
+            O navegador usado não suporta reproduzir a música
+        </audio>
+    </div>
+
+
+
 
     <div><!-- div principal-->
 
-        <h1>Site de Victor 😁</h1>
+        <h1>Victor Web Espacinho </h1>
 
-        <div class="container"><!--div da parte do topo-->
+        <div class="redes"><!--div da parte do topo-->
 
-            <a href="https://www.instagram.com/vv1ctor/"><img src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\instagram.png" alt="" width="70" height="70">
-            </a> <a href="https://twitter.com/rtivco">     <img src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\twitter.png" alt="" width="60" height="60"></a>
+            <a href="https://www.instagram.com/vv1ctor/"><img
+                    src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\instagram.png" alt=""></a>
+            <a href="https://twitter.com/rtivco"><img
+                    src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\twitter.png" alt=""></a>
 
         </div><!--fim da div da parte do topo-->
 
-        <hr color="black">
-
         <div><!--div da parte dos textos sobre mim-->
 
-            <div>
+            <h2 class="bordaalt">Quem sou? De onde venho?</h2>
 
-                <h2 class="bordaalt">Quem sou? De onde venho?</h2>
-                
-                <img src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\eu.jpeg" alt="" class = "pfp">
-                
-                    <p>Meu nome é Victor Afonso, nasci no dia 20/04/2004, ou seja tenho 19 anos. Nasci e vivi até os meus 18 anos na cidade mineira Teofilo Otoni, 
-                        sendo considerada como Capital Mundial das Pedras Preciosas, muito superior a pseudo-cidade de Curvelo.</p>
-                
+            <div class="sobremim">
+
+
+
+                <img src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\eu.jpeg" alt="" class="pfp">
+
+                <p style="margin-top: 1em;">Meu nome é Victor Afonso, nasci no dia 20/04/2004, ou seja tenho 19 anos.
+                    Nasci e vivi até os meus 18 anos na cidade mineira Teofilo Otoni,
+                    sendo considerada como Capital Mundial das Pedras Preciosas, muito superior a pseudo-cidade de
+                    Curvelo.</p>
+
             </div>
             <div>
 
                 <h2>Quais foram meus primeiros contatos com computadores?</h2>
-                <p>Nem me lembro qual foi a priemeira vez em que incostei em um computador, desde que me entendo por gente tive um computador em casa, meu pai também interessado, desde pequeno me incentivou a aprender usar o computador, me ensinando a usar, e posteriormente até como dar manutenção em computadores. Apesar de sempre estar envolvido com tecnologia a vida toda,só fui estudar seriamente algo além de hardware, e programar quando em 2019 entrei no curso de Informatica para Internet integrado ao ensino médio do IFNMG campus Teófilo Otoni. Lá me formei técnino em 2022 (era pra ser em 2021, mas a pandemia adiou a conclusão do curso), e no mesmo ano entrei na UFV para cursar Ciências da Computação, onde estou tendo a oportunidade de aprofundar cada vez mais meus conhecimentos.</p>
-            
+                <p>Desde que me entendo por gente, tive um computador em casa. Meu pai também era interessado e desde
+                    pequeno me incentivou a aprender a usar o computador, ensinando-me inclusive sobre manutenção de
+                    computadores. Apesar de estar envolvido com tecnologia durante toda a minha vida, só comecei a
+                    estudar seriamente algo além de hardware e programação em 2019, quando ingressei no curso de
+                    Informática para Internet integrado ao ensino médio do IFNMG campus Teófilo Otoni. Lá, formei-me
+                    técnico em 2022 (era para ser em 2021, mas a pandemia adiou a conclusão do curso). No mesmo ano,
+                    ingressei na UFV para cursar Ciências da Computação, onde tenho a oportunidade de aprofundar cada
+                    vez mais meus conhecimentos.</p>
+
             </div>
             <div>
                 <h2 class="bordaalt">O que gosto de fazer com meu tempo livre?</h2>
-                <p>Hoje o qu eu gosto de fazer é basicamente passar tempo com as pessoas que gosto, escutar músicas, ver filmes, as vezes ler alguma coisa e ir na academia (quando da tempo). Meus filmes preferidos são A Summer’s Tale e On the Beach at Night Alone. Sobre música dedicarei um tópico especifico, porque talvez seja o que mais gosto de fazer coisas relacionadas. Depois de entrar na faculdade eu tenho lido menos que lia antes, e apesar de não me consdierar comuna, minhas ultimas leituras foram todas conteúdos marxistas(leituras bem básicas e introdutorias).</p>
-                <p>Além disso tudo que eu falei anteriormente, no meu tempo livre eu acabo passando bastante tempo com alguma coisa que estou interessado no momento, algum jogo que comecei jogar, algum assunto aleatorio que descobri e resolvo passar tempo vendo coisa sobre e nunca mais voltar no tema depois que esse interesse momentaneo passa. </p>
+                <p>Hoje, o que eu gosto de fazer basicamente é passar tempo com as pessoas que gosto, escutar músicas,
+                    ver filmes e, às vezes, ler alguma coisa. Também vou à academia quando tenho tempo. Meus filmes
+                    preferidos são "A Summer's Tale" e "On the Beach at Night Alone". Sobre música, dedicarei um tópico
+                    específico, pois talvez seja o que mais gosto de fazer é relacionado a música. Depois de entrar na
+                    faculdade, tenho lido menos do que antes, e apesar de não me considerar comuna, minhas últimas
+                    leituras têm sido todas sobre conteúdos marxistas (leituras básicas e introdutórias).</p>
+                <p>Além de tudo isso que mencionei anteriormente, no meu tempo livre acabo dedicando bastante tempo a
+                    alguma coisa que estou interessado no momento, como um jogo que comecei a jogar ou algum assunto
+                    aleatório que descobri e decido passar tempo pesquisando sobre, mesmo que não volte mais a esse tema
+                    depois que o interesse momentâneo passa. </p>
             </div>
             <div>
                 <h2>Curiosidade "estranha"</h2>
-                <p>Perguntei pra uns amigos uma curiosidade estranha sober mim para colocar, e me disseram que tenho o gosto extremamente acurado pra industrializados, onde alguns amigos trocaram a marca de refrigerante, bolacha e outros industrializados e alimentos que fazem mal num geral depois de eu ter mostrado o meu favorito daquela categoria para eles.</p>
+                <p>Perguntei pra uns amigos uma curiosidade estranha sober mim para colocar, e me disseram que tenho o
+                    gosto extremamente acurado pra industrializados, onde alguns amigos trocaram a marca de
+                    refrigerante, bolacha e outros industrializados e alimentos que fazem mal num geral depois de eu ter
+                    mostrado o meu favorito daquela categoria para eles.</p>
+            </div>
+
+            <div>
+                <h2>Música</h2>
+                <p>Desde pequeno, sempre gostei muito de música. Meu pai e primos foram referência para o que eu
+                    escutava. Cheguei a fazer um curto período de aulas de flauta quando era bem criança, por volta dos
+                    7 anos de idade, se me lembro bem. Mais tarde, aos 10 anos, entrei para um coral da minha cidade,
+                    onde, na época, com voz infantil, conseguia cantar. Depois que a puberdade começou, minha voz mudou
+                    e eu não me encaixava mais no coral infantil. Com cerca de 12 anos, deixei o coral e já tinha um
+                    gosto musical próprio, que era bastante parecido com o dos meus primos. Aos 16 anos, ganhei uma
+                    guitarra e comecei a aprender a tocar, mas até hoje toco muito mal. Conforme me tornei adolescente,
+                    peguei o costume de estar sempre escutando um álbum novo, que eu não tinha escutado antes, assim meu
+                    gosto musical só foi se expandindo até se tornar o que é hoje. Meus artistas favoritos atualmente
+                    são Vitor Brauer, Aphex Twin (que inclusive tenho a logo tatuada no tríceps), Freddie Gibbs, Bad
+                    Brains, Fiona Apple, entre muitos outros. </p>
+                <figure class="album">
+                    <div>
+                        <img src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\brauer.jpeg"
+                            alt="eu e o vitor brauer" class="pfp foto1">
+                        <figcaption>Eu e o Vitor Brauer</figcaption>
+                    </div>
+
+                    <div>
+                        <img src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\aphex.png"
+                            alt="aphex twin logo" class="pfp foto2">
+                        <figcaption>Logo do Aphex Twin que tenho tatuada</figcaption>
+                    </div>
+
+                    <div>
+                        <img src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\sophie.png" alt="Sophie Xeon"
+                            class="pfp foto3">
+                        <figcaption>Sophie Xeon</figcaption>
+                    </div>
+
+                    <div>
+                        <img src="C:\Users\victo\Documents\GitHub\Meu-site\Meu-site\demais\bjork.jpg" alt="Bjork"
+                            class="pfp foto4">
+                        <figcaption>Bjork</figcaption>
+                    </div>
+
+                </figure>
             </div>
 
         </div><!--fim da div da parte dos textos sobre mim-->
 
 
     </div><!--Final da div principal-->
+
 </body>
+
 </html>
